@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/classes/Quiz.js"></script>
+    <script src="js/classes/Question.js" defer></script>
+    <script src="js/index.js" defer></script>
+   
+    <title>Quiz inlämning</title>
+</head>
+<body>
+    <h1>Quiz/Question Editor</h1>
+<h1><a href="quiz.html">Main menu</a></h1>
+    <div class="addQuestions">
+        <input id="questionInput" type="text" placeholder="Question" />
+        <br>
+        <input id="correctInput" type="text" placeholder="Correct Answer" />
+        <br>
+        <input id="wrongOneInput" type="text" placeholder="Wrong Answer 1" />
+        <br>
+        <input id="wrongTwoInput" type="text" placeholder="Wrong Answer 2" />
+        <br>
+        <input id="wrongThreeInput" type="text" placeholder="Wrong Answer 3" />
+        <br>
+        <button onclick="handlers.addQuestion()">Add Question</button>
+        <button onclick="handlers.addQuiz()">Add Quiz</button>
+      </div>
+      <div class="info">
+        <li id="NumberQuestionsInQuiz">
+          You currently have 0 questions added to your quiz
+        </li>
+       
+      </div>
+      <p class="answersCorrect"></p>
+      <div class="questionsWrapper"></div>
+</body>
+</html>
